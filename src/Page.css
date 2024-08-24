@@ -1,0 +1,16 @@
+.page {
+    display: grid; /* Equivalent to `grid` */
+    grid-template-columns: repeat(1, 1fr); /* Equivalent to `grid-cols-1` */
+    gap: 1.25rem; /* Equivalent to `gap-5` */
+    padding: 1.5rem; /* Equivalent to `p-6` */
+  }
+
+  .map-section{
+    grid-column: span 2 / auto;
+  }
+  /* Responsive styles for medium screens and above */
+@media (min-width: 768px) {
+    .page {
+      grid-template-columns: repeat(3, 1fr); /* Equivalent to `md:grid-cols-3` */
+    }
+  }
